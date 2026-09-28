@@ -1,4 +1,4 @@
-## Imports and Global Variables
+## Imports and Global Variables 
 import sys ## Allows sys file manipulation
 import argparse ## Allows additional python arguments
 from pathlib import Path ## Allows additional pathing support
@@ -57,3 +57,8 @@ except FileNotFoundError:
     with open("results.txt", "x") as f:
         f.write("PASSLOG, Success and Fail Count\n" + str(successes) + "\n\n" + str(failures))
         shutil.move("./results.txt", "./Results/results.txt")
+
+## File Description: A recursive script that allows for the use of a dictionary to catalogue failed and successful decompression
+## attempts while also providing a successful exctraction of the archive's contents.
+
+## Author: Moxxii Sutton
