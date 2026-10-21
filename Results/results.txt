@@ -1,6 +1,0 @@
-PASSLOG, Success and Fail Count
-Successful Passwords Here
-['meowmaybe?']
-
-Failed Passwords Here
-['alacazam', 'abracadabra', 'yessir', 'ididathing', 'iwonderwhatitcouldbe', 'isTHISthepassword?', "surelyit'sTHISone", "uh-huh...that'snotit", 'wouldyouLOOKatthat', 'twobearshighfiving', '42']
