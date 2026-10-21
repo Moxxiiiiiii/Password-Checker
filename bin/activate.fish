@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/mox/Documents/Uni/applying-programming-basics/Password-Checker
+set -gx VIRTUAL_ENV /home/moxxii/Documents/git-projects/Password-Checker
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

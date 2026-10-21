@@ -2,9 +2,21 @@
 import sys ## Allows sys file manipulation
 import argparse ## Allows additional python arguments
 from pathlib import Path ## Allows additional pathing support
-import py7zr ## Allows 7zip access
 import lzma ## Allows for extra compression handling
 import shutil ## Allows for moving files
+
+## py7zr lives in this project's own venv (lib/<ver>/site-packages), not installed system-wide.
+## If the current interpreter can't find it, point sys.path at the local copy first.
+try:
+    import py7zr ## Allows 7zip access
+except ImportError:
+    _venv_root = Path(__file__).resolve().parent
+    for _lib in sorted((_venv_root / "lib").glob("python*")):
+        _site_packages = _lib / "site-packages"
+        if (_site_packages / "py7zr").is_dir():
+            sys.path.insert(0, str(_site_packages))
+            break
+    import py7zr ## Allows 7zip access
 
 ## Global Variables and Lists
 successes = []

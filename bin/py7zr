@@ -1,4 +1,4 @@
-#!/home/mox/Documents/Uni/applying-programming-basics/Password-Checker/bin/python
+#!/home/moxxii/Documents/git-projects/Password-Checker/bin/python
 import sys
 from py7zr.__main__ import main
 if __name__ == '__main__':
